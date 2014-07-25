@@ -8,6 +8,5 @@ RUN chmod 664 /etc/mysql/conf.d/my.cnf
 ADD run.sh /run.sh
 RUN chmod +x /run.sh
 
-VOLUME ["/var/lib/mysql"]
 EXPOSE 3306
 CMD ["/run.sh"]
